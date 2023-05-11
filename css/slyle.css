@@ -697,14 +697,48 @@ color: var(--color-grey);
 }
 
 .contact-form {
-display: block;
+display: flex;
+flex-direction: column;
 padding: 24px;
 
 }
 
 .contact-form-filed {
+   
     margin-bottom: 26px;
 }
+
+.contact-send-btn {
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+    /* padding: 16px 32px; */
+    margin: 0 auto;
+    width: 169px;
+    height: 56px;
+    /* left: 635px;
+    top: 584px; */
+    
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    
+    color: var(--color-white);
+}
+
+
+
+
 
 /* PORFOLIO */
 
