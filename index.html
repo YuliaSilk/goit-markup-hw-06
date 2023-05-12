@@ -406,18 +406,18 @@
 
          <form class="contact-form">
           <label for="">
-            <input type="text" class="contact-form-filed" name="name">
+            <input type="name" class="contact-form-filed" name="user_name" required >
           </label>
           <label for="">
-            <input type="text" class="contact-form-filed" name="phone">
+            <input type="phone" class="contact-form-filed" name="user_phone" required  required >
           </label>
           <label for="">
-            <input type="text" class="contact-form-filed" name="email">
+            <input type="email" class="contact-form-filed" name="user_email">
           </label>
           <!-- <input type="text" class="contact-form-filed" name="coment"> -->
           
           <label class="form-coment-label" for="comment">
-            <textarea class="form-coment" name="comment" id="comment" cols="30" rows="10">Text input</textarea>
+            <textarea class="form-coment" name="comment" id="comment" cols="30" rows="10" required >Text input</textarea>
           </label>
           
           <button type="submit" class="contact-send-btn">Send</button>
