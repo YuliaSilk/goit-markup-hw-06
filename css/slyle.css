@@ -700,7 +700,7 @@ color: var(--color-grey);
 display: flex;
 flex-direction: column;
 padding: 24px;
-
+width: 100%;
 }
 
 .contact-form-filed {
