@@ -707,6 +707,21 @@ padding: 24px;
    
     margin-bottom: 26px;
 }
+.form-coment-label {
+    max-width: 360px;
+    min-height: 120px;
+}
+
+.form-coment {
+
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.04em;
+
+color: rgba(46, 47, 66, 0.4);
+}
 
 .contact-send-btn {
     /* display: flex;
@@ -728,6 +743,8 @@ padding: 24px;
     text-align: center;
     justify-content: center;
     padding: 16px 32px;
+
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
