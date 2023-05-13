@@ -433,13 +433,17 @@
 
           <label class="contact-form-field" for="comment">
             <span class="comment">Comment</span>
-            
-            <div class="form-wraper"><textarea class="form-coment" name="comment" id="comment" cols="30" rows="10" required >Text input</textarea></div>
+            <textarea class="form-coment" name="comment" id="comment" cols="30" rows="10" required >Text input</textarea>
           </label>
 
-          <label for="">
-            <input type="checkbox">I accept the terms and conditions of the 
-            <a href="">Privacy Policy</a> 
+          <label class="form-checkbox" for="">
+            <input class="chec-input" type="checkbox">
+            <svg class="chec-input-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-chec"></use>
+              <use href="./images/icons.svg#chec-default"></use>
+            </svg>
+            <span class="text-chec">I accept the terms and conditions of the</span>
+            <a class="link-chec" href="">Privacy Policy</a> 
           </label>
           
           <button type="submit" class="contact-send-btn">Send</button>
