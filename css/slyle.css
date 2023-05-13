@@ -761,28 +761,69 @@ fill: #4D5AE5;
     margin-bottom: 4px;
 }
 .form-coment {
-display: block;
-width: 100%;
-height: 120px;
-padding: 8px 16px;
-resize: none;
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    resize: none;
 
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
-border: 1px solid rgba(46, 47, 66, 0.4);
-border-radius: 4px;
-outline: transparent;
-outline-offset: -1px;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: transparent;
+    outline-offset: -1px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-coment:focus {
 outline: 1px solid #4D5AE5;
 }
 
+.form-checkbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 24px;
+    
+}
+.text-chec {
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    user-select: none;
+}
+.link-chec {
+    padding: 0;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+}
+.chec-input {
+    appearance: none;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid  #8E8F99;
+    border-radius: 2px;
+   
+}
+
+.chec-input:checked {
+    background-color: #404bbf;
+}
 
 .contact-send-btn {
     display: flex;
@@ -803,7 +844,7 @@ outline: 1px solid #4D5AE5;
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); ;
 }
-
+.contact-send-btn:hover,
 .contact-send-btn:focus {
     background: #404BBF;
 }
