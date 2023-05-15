@@ -391,6 +391,22 @@
                 </li>
               </ul>
         </div>
+
+      <div class="container-subscribe">
+        <p class="social-footer-text">Subscribe</p>
+        <label for="subscribe">
+          <div class="subscribe-footer">
+            <input class="subscribe" type="email" id="subscribe">
+            <span class="subscribe-name">E-mail</span>
+            <button class="subscrib-button-active" type="submit">Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="20">
+                <use href="./images/icons.svg#footer-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+
+        </label>
+      </div>
       </div>
     </footer>
 
@@ -406,7 +422,7 @@
          <strong class="form-text">Leave your contacts and we will call you back</strong>
          
          <form class="contact-form">
-          <label class="contact-form-field" for="name" name="user_name">
+          <label class="contact-form-field" for="name" name="user_name" required minlength="3" pattern="^[a-zA-Z]+/s[a-zA-Z]+$" title="Username must be two words separated by space." >
             <span>Name</span></label>
             <div class="form-wraper">
               <input class="user-form" type="text" name="user_name" id="user_name">
@@ -414,7 +430,7 @@
                 <use href="./images/icons.svg#person-black"></use>
               </svg>
             </div>
-          <label class="contact-form-field" for="tel" type="tel" name="user_phone">
+          <label class="contact-form-field" for="tel" type="tel" name="user_phone" required>
             <span>Phone</span> </label>
             <div class="form-wraper">
               <input class="user-form" type="tel" name="user_phone" id="user_phone">
@@ -422,7 +438,7 @@
                 <use href="./images/icons.svg#phone-black"></use>
               </svg>
             </div>
-          <label class="contact-form-field" for="email" type="email" name="user_email">
+          <label class="contact-form-field" for="email" type="email" name="user_email" required>
             <span>E-mail</span> </label>
             <div class="form-wraper">
               <input class="user-form" type="email" name="user_email" id="user_email">
@@ -433,17 +449,19 @@
 
           <label class="contact-form-field" for="comment">
             <span class="comment">Comment</span>
-            <textarea class="form-coment" name="comment" id="comment" cols="30" rows="10" required >Text input</textarea>
+            <textarea class="form-coment" name="comment" id="comment" cols="30" rows="10" required placeholder="Text input"></textarea>
           </label>
 
-          <label class="form-checkbox" for="">
-            <input class="chec-input" type="checkbox">
-            <svg class="chec-input-icon" width="16" height="16">
+          <label class="form-checkbox" for="checkbox">
+            <input class="chec-input" type="checkbox" name="checkbox" id="checkbox">
+            <span class="text-chec">I accept the terms and conditions of the  
+              <a class="link-chec" href="">Privacy Policy</a> </span>
+            <!-- <svg class="chec-input-icon" width="16" height="16">
               <use href="./images/icons.svg#icon-chec"></use>
               <use href="./images/icons.svg#chec-default"></use>
-            </svg>
-            <span class="text-chec">I accept the terms and conditions of the</span>
-            <a class="link-chec" href="">Privacy Policy</a> 
+            </svg> -->
+           
+           
           </label>
           
           <button type="submit" class="contact-send-btn">Send</button>
