@@ -646,10 +646,12 @@ margin-left: auto;
     background-color: #2E2F42;
     transform: translateY(-50%);
 
-    transition: translateY 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: translateY 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
  .subscribe:focus +.subscribe-name {
+   
     transform: translateY(-35px);
+   
  } 
  /* .subscribe:focus {
     outline: 1px solid #ffffff;
