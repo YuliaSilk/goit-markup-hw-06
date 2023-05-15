@@ -394,18 +394,21 @@
 
       <div class="container-subscribe">
         <p class="social-footer-text">Subscribe</p>
-        <label for="subscribe">
-          <div class="subscribe-footer">
-            <input class="subscribe" type="email" id="subscribe">
-            <span class="subscribe-name">E-mail</span>
-            <button class="subscrib-button-active" type="submit">Subscribe
-              <svg class="footer-subscribe-icon" width="24" height="20">
-                <use href="./images/icons.svg#footer-subscribe"></use>
-              </svg>
-            </button>
-          </div>
 
-        </label>
+        <div class="subcribe-menu">
+          <div class="subscribe-footer">
+            <label for="subscribe">
+              <input class="subscribe-input" type="email" id="subscribe" required>
+              <span class="subscribe-name">E-mail</span>
+            </label>
+                 </div>
+              <button class="subscrib-button-active" type="submit">Subscribe
+                <svg class="footer-subscribe-icon" width="24" height="20">
+                 <use href="./images/icons.svg#footer-subscribe"></use>
+                </svg>
+              </button>
+        </div>
+            
       </div>
       </div>
     </footer>
@@ -422,26 +425,26 @@
          <strong class="form-text">Leave your contacts and we will call you back</strong>
          
          <form class="contact-form">
-          <label class="contact-form-field" for="name" name="user_name" required minlength="3" pattern="^[a-zA-Z]+/s[a-zA-Z]+$" title="Username must be two words separated by space." >
+          <label class="contact-form-field">
             <span>Name</span></label>
             <div class="form-wraper">
-              <input class="user-form" type="text" name="user_name" id="user_name">
+              <input class="user-form" type="text" name="user_name" id="user_name" required minlength="2" pattern="^[a-zA-Z]+/s[a-zA-Z]+$" title="Username must be two words separated by space." >
               <svg class="user-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#person-black"></use>
               </svg>
             </div>
-          <label class="contact-form-field" for="tel" type="tel" name="user_phone" required>
+          <label class="contact-form-field" for="user_phone">
             <span>Phone</span> </label>
             <div class="form-wraper">
-              <input class="user-form" type="tel" name="user_phone" id="user_phone">
+              <input class="user-form" type="tel" name="user_phone" id="user_phone" required>
               <svg class="user-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-black"></use>
               </svg>
             </div>
-          <label class="contact-form-field" for="email" type="email" name="user_email" required>
+          <label class="contact-form-field" for="user_email" >
             <span>E-mail</span> </label>
             <div class="form-wraper">
-              <input class="user-form" type="email" name="user_email" id="user_email">
+              <input class="user-form" type="email" name="user_email" id="user_email" required>
               <svg class="user-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#email-black"></use>
               </svg>
@@ -455,13 +458,7 @@
           <label class="form-checkbox" for="checkbox">
             <input class="chec-input" type="checkbox" name="checkbox" id="checkbox">
             <span class="text-chec">I accept the terms and conditions of the  
-              <a class="link-chec" href="">Privacy Policy</a> </span>
-            <!-- <svg class="chec-input-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-chec"></use>
-              <use href="./images/icons.svg#chec-default"></use>
-            </svg> -->
-           
-           
+              <a class="link-chec" href="">Privacy Policy</a> </span>           
           </label>
           
           <button type="submit" class="contact-send-btn">Send</button>
