@@ -509,7 +509,6 @@ fill: currentColor;
 
 /* footer */
 .footer {
-    /* display: flex; */
     background-color: var(--color-navy-blue);
     padding: 100px 0;
    
@@ -602,10 +601,6 @@ margin-left: auto;
 }
 
 .container-subscribe {
-   /* display: flex;
-   flex-direction: column;
-  width: 453px;
-  height: 80px;  */
   margin-left: 80px;
 
 }
@@ -786,10 +781,10 @@ letter-spacing: 0.02em;
 color: var(--color-grey);
 }
 
-.contact-form {
+/* .contact-form {
 display: flex;
 flex-direction: column;
-}
+} */
 
 .contact-form-field {
     display: block;
@@ -845,6 +840,16 @@ fill: #4D5AE5;
     display: block;
     margin-bottom: 4px;
 }
+
+.contact-form-textarea {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
 .form-coment {
     display: block;
     width: 100%;
@@ -871,7 +876,6 @@ outline: 1px solid #4D5AE5;
 
 .form-checkbox {
     display: flex;
-    justify-content: center;
     text-align: center;
     width: 100%;
     gap: 6px;
